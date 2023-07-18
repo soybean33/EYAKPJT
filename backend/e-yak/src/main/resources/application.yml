@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mariadb://localhost:3306/eyak
+    driver-class-name: org.mariadb.jdbc.Driver
