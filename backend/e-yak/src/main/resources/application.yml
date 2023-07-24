@@ -12,3 +12,18 @@ spring:
     password: root
     url: jdbc:mariadb://localhost:3306/eyak
     driver-class-name: org.mariadb.jdbc.Driver
+
+oauth2:
+  provider:
+    google:
+      user-info-uri: "https://www.googleapis.com/auth/userinfo.email"
+
+jwt:
+  properties:
+#    2시간
+    access-token-expiration-time-in-milliseconds: 7200000
+#    28일
+    refresh-token-expiration-time-in-milliseconds: 2419200000
+
+api-version: "/api/v1"
+
