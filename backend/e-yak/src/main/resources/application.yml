@@ -1,7 +1,7 @@
 spring:
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
 
     show-sql: true
     properties:
@@ -16,7 +16,9 @@ spring:
 oauth2:
   provider:
     google:
-      user-info-uri: "https://www.googleapis.com/auth/userinfo.email"
+      user-info-uri: "https://www.googleapis.com/oauth2/v1/userinfo"
+
+
 
 jwt:
   properties:
@@ -26,4 +28,6 @@ jwt:
     refresh-token-expiration-time-in-milliseconds: 2419200000
 
 api-version: "/api/v1"
-
+logging:
+  level:
+    now.eyak: debug
