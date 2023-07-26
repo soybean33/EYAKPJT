@@ -13,3 +13,6 @@ spring:
     password: root
     url: jdbc:mariadb://i9a103.p.ssafy.io:3306/eyak
     driver-class-name: org.mariadb.jdbc.Driver
+server:
+  port: 8081
+
