@@ -7,6 +7,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        dialect: org.hibernate.dialect.MariaDBDialect
   datasource:
     username: root
     password: root
@@ -17,6 +18,10 @@ oauth2:
   provider:
     google:
       user-info-uri: "https://www.googleapis.com/oauth2/v1/userinfo"
+    naver:
+      user-info-uri: "uri"
+    kakao:
+      user-info-uri: "uri"
 
 
 
