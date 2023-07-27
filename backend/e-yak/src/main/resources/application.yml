@@ -1,18 +1,48 @@
 spring:
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
 
     show-sql: true
     properties:
       hibernate:
         format_sql: true
+        dialect: org.hibernate.dialect.MariaDBDialect
 
   datasource:
     username: root
     password: root
     url: jdbc:mariadb://i9a103.p.ssafy.io:3306/eyak
     driver-class-name: org.mariadb.jdbc.Driver
+
+# resuorces/data.sql 을 애플리케이션 시작 시 자동 실행하도록 설정
+  sql:
+    init:
+      mode: always
+
+oauth2:
+  provider:
+    google:
+      user-info-uri: "https://www.googleapis.com/oauth2/v1/userinfo"
+    naver:
+      user-info-uri: "uri"
+    kakao:
+      user-info-uri: "uri"
+
+
+jwt:
+  properties:
+#    2시간
+    access-token-expiration-time-in-milliseconds: 7200000
+#    28일
+    refresh-token-expiration-time-in-milliseconds: 2419200000
+
+api-version: "/api/v1"
+
+logging:
+  level:
+    now.eyak: debug
+
 server:
   port: 8081
 
