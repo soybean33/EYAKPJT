@@ -8,10 +8,11 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.MariaDBDialect
+
   datasource:
     username: root
     password: root
-    url: jdbc:mariadb://localhost:3306/eyak
+    url: jdbc:mariadb://i9a103.p.ssafy.io:3306/eyak
     driver-class-name: org.mariadb.jdbc.Driver
 
 # resuorces/data.sql 을 애플리케이션 시작 시 자동 실행하도록 설정
@@ -29,7 +30,6 @@ oauth2:
       user-info-uri: "uri"
 
 
-
 jwt:
   properties:
 #    2시간
@@ -42,3 +42,7 @@ api-version: "/api/v1"
 logging:
   level:
     now.eyak: debug
+
+server:
+  port: 8081
+
