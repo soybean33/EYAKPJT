@@ -18,7 +18,7 @@ spring:
 # resuorces/data.sql 을 애플리케이션 시작 시 자동 실행하도록 설정
   sql:
     init:
-      mode: never
+      mode: always
 
 oauth2:
   provider:
