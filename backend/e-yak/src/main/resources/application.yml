@@ -11,8 +11,8 @@ spring:
     defer-datasource-initialization: true
 
   datasource:
-    username: root
-    password: root
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     url: jdbc:mariadb://i9a103.p.ssafy.io:3306/eyak
     driver-class-name: org.mariadb.jdbc.Driver
 
