@@ -23,6 +23,12 @@ spring:
       mode: always
       separator: ^;
 
+  data:
+    redis:
+      host: i9a103.p.ssafy.io
+      port: 6379
+      password: yakmukjja103
+
 oauth2:
   provider:
     google:
