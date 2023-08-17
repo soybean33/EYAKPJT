@@ -1,7 +1,7 @@
 spring:
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
 
     show-sql: true
     properties:
@@ -16,12 +16,9 @@ spring:
     url: jdbc:mariadb://i9a103.p.ssafy.io:3306/eyak
     driver-class-name: org.mariadb.jdbc.Driver
 
-
-  # resuorces/data.sql 을 애플리케이션 시작 시 자동 실행하도록 설정
   sql:
     init:
-      mode: always
-      separator: ^;
+      mode: never
 
   data:
     redis:
