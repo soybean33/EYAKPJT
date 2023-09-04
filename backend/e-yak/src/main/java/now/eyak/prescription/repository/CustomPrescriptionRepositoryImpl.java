@@ -11,6 +11,7 @@ import now.eyak.prescription.dto.query.PrescriptionListQueryDto;
 import now.eyak.prescription.dto.query.PrescriptionRoutineFutureQueryDto;
 import now.eyak.prescription.dto.query.PrescriptionRoutineQueryDto;
 import now.eyak.routine.domain.QMedicineRoutineCheck;
+import now.eyak.routine.domain.QPrescriptionMedicineRoutine;
 import now.eyak.routine.dto.query.MedicineRoutineCheckBetweenDatesQueryDto;
 import now.eyak.routine.enumeration.Routine;
 import org.springframework.transaction.annotation.Transactional;
@@ -199,6 +200,7 @@ public class CustomPrescriptionRepositoryImpl implements CustomPrescriptionRepos
 
         return routineQueryList;
     }
+
 
     @Override
     public Optional<Prescription> findByIdAndMember(Long id, Member member) {
